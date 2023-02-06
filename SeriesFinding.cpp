@@ -195,8 +195,7 @@ int main()
     // Function to check HP
     if (checkIsHP(arr, n))
     {
-        float delta =
-            double a = 1 / (arr[0] + (n - 1) * delta);
+        float delta = 1 / (arr[0] + (n - 1) * delta);
         flag = 1;
     }
 
