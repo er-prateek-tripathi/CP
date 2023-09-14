@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "ostream": "cpp",
+    "source_location": "cpp",
+    "sstream": "cpp",
+    "regex": "cpp"
+  }
+}
