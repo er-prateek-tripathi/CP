@@ -1,5 +1,4 @@
-// The task is to print all the even numbers from 1 to n.
-
+//The task is to print all the even numbers from 1 to n.
 
 #include<bits/stdc++.h>
 using namespace std;
