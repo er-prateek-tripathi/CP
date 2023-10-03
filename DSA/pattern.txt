@@ -1,0 +1,11 @@
+the idea behind patterns is that we need to find a relation between all the columns and rows.
+if we are able to find the relation betwenn pattern of column to the patterns of columns, 
+the formulation of the code will be peice of cake.
+
+
+int i = 0; if i is taken 0.
+if using i=0, do not use = in while condition.
+
+while ( i<n ) {
+
+}
