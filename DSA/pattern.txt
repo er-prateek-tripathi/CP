@@ -2,6 +2,17 @@ the idea behind patterns is that we need to find a relation between all the colu
 if we are able to find the relation betwenn pattern of column to the patterns of columns, 
 the formulation of the code will be peice of cake.
 
+Pattern :
+* * *
+* * *
+* * *
+The code provided is a simple C++ program to print a square pattern 
+of stars. It works by using two nested while loops: the outer loop 
+iterates over the rows of the pattern, and the inner loop iterates over 
+the columns of the pattern. For each row, the inner loop prints a star
+for each column, followed by a space. After the inner loop finishes, 
+the outer loop prints a newline character to move to the next row.
+
 
 int i = 0; if i is taken 0.
 if using i=0, do not use = in while condition.
@@ -9,3 +20,13 @@ if using i=0, do not use = in while condition.
 while ( i<n ) {
 
 }
+
+
+Pattern : 
+1 1 1
+2 2 2
+3 3 3
+
+if the row number is 1st then its contents are 1s.
+
+value of nth row = column number of nth row
