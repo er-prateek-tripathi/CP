@@ -1,5 +1,5 @@
-int j = i;
-    // while(j<=n){
-    //     cout<<i;
-    //     j+=1;
+int start = i-1;
+    // while(start){
+    //     cout<<"*";
+    //     start-=1;
     // }
