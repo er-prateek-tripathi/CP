@@ -1,10 +1,7 @@
-/* 
-n = 4
-A B C D
-B C D E
-C D E F
-D E F G
-
+/*
+1 2 3
+4 5 6
+7 8 9
 */
 
 #include<bits/stdc++.h>
@@ -12,14 +9,13 @@ using namespace std;
 
 int main() {
 system("cls"); 
-int n = 4;
-int i = 1; 
-while (i<=n){
+int n = 3;
+int i = 1, count = 1;
+while(i<=n){
     int j = 1;
-    char ch = 'A' + i + j - 2;
     while(j<=n){
-        cout<<ch<<" ";
-        ch += 1;
+        cout<<count<<" ";
+        count+=1;
         j+=1;
     }
     cout<<endl;

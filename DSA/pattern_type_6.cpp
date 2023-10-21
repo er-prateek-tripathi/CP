@@ -1,9 +1,9 @@
-/* 
+/*
 n = 4
-A B C D
-B C D E
-C D E F
-D E F G
+A
+B B
+C C C
+D D D D
 
 */
 
@@ -13,13 +13,12 @@ using namespace std;
 int main() {
 system("cls"); 
 int n = 4;
-int i = 1; 
+int i = 1;
 while (i<=n){
     int j = 1;
-    char ch = 'A' + i + j - 2;
-    while(j<=n){
+    char ch = 'A' + i - 1;
+    while(j<=i){
         cout<<ch<<" ";
-        ch += 1;
         j+=1;
     }
     cout<<endl;
