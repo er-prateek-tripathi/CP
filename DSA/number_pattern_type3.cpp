@@ -17,8 +17,8 @@ cin >> n;
 while (i<=n) {
     int j = 1, value = i;
     while(j<=i) {
-        cout<<value<<" ";
-        value -= 1;
+        cout<<i-j+1<<" ";
+        //value -= 1;
         j += 1;
 
     }
