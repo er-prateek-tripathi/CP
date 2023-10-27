@@ -25,12 +25,18 @@ Output: 21
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    int x;
+    cin >> x;
     int reversed = 0;
-    while(n){
-        reversed = reversed * 10 + n % 10;
-        n /= 10;
+    while(x){
+        int digit = x%10;
+
+        if (( reversed > INT_MAX/10 ) || ( reversed < INT_MIN/10 )){
+            return 0;
+        }
+
+        reversed = reversed*10 + digit;
+        x /= 10;
     }
     cout << reversed;
 return 0;
