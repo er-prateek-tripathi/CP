@@ -1,5 +1,6 @@
 /*
 Problem Link: https://leetcode.com/problems/power-of-two/
+similar solution for questions "Power of 3" & "Power fo 4".
 Problem Description:
 Given an integer n, return true if it is a power of two. Otherwise, return false.
 
@@ -20,3 +21,29 @@ Example 3:
 Input: n = 3
 Output: false
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    bool flag;
+    long int ans = 0;
+    for ( int i = 0; i <= 30; i++ ) {
+        ans = pow( 2, i );
+        
+    }
+    if ( ans == n ) {
+            flag = true;
+        }
+        else flag = false;
+
+    if (flag == true) {
+        cout<<"Yes";
+    }
+    else cout<<"no";
+
+return 0;
+}
