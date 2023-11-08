@@ -18,7 +18,7 @@ void input (int arr[], int arr1[], int n) {
 }
 
 void Intersection ( int arr[], int arr1[], int n) {
-    
+    //Incomplete
 }
 
 int main() {
