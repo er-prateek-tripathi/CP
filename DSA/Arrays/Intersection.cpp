@@ -1,4 +1,6 @@
 // Following program will find the intersection of two arrays.
+// Problem Link: https://www.codingninjas.com/studio/problems/intersection-of-2-arrays_1082149?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1&leftPanelTabValue=PROBLEM
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -23,23 +25,46 @@ void input (vector <int> &arr, vector <int> &arr1, int n, int m) {
 }
 
 vector <int> Intersection ( vector <int> &arr, vector <int> &arr1, int n, int m) {
-    sort(arr.begin(), arr.end());
-    sort(arr1.begin(), arr1.end());
+    // Brute Force Way
+    // sort(arr.begin(), arr.end());
+    // sort(arr1.begin(), arr1.end());
+
+    // vector <int> ans;
+
+    // for ( int i = 0; i < n; i++ ) {
+    //     int ele = arr[i];
+
+    //     for ( int j = 0; j < m; j++ ) {
+    //         if ( ele == arr1[j] ) {
+    //             ans.push_back(ele);
+    //             arr1[j] = -1;
+    //             break;
+    //         }
+    //     }
+    // }
+    // return ans;
+
+    // Optimized Solution
 
     vector <int> ans;
 
-    for ( int i = 0; i < n; i++ ) {
-        int ele = arr[i];
+    int i = 0, j = 0;
 
-        for ( int j = 0; j < m; j++ ) {
-            if ( ele == arr1[j] ) {
-                ans.push_back(ele);
-                arr1[j] = -1;
-                break;
-            }
+    while ( i < n && j < m ) {
+        if ( arr[i] == arr1[j] ) {
+            ans.push_back( arr[i] );
+            i++;
+            j++;
+        }
+        else if ( arr[i] < arr1[j] ) {
+            i++;
+        }
+        else {
+            j++;
         }
     }
     return ans;
+    
 }
 
 int main() {
