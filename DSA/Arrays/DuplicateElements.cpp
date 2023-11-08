@@ -13,13 +13,27 @@ void input (int arr[], int n) {
 
 void Duplicate_Elements ( int arr[], int n) {
     
-    for( int i = 0; i < n; i++) {
-        int j;
-        for ( j = 0; j < i; j++ ) {
-            if ( arr[i] == arr[j] )
-                cout << arr[i] << " ";
-        }
+    // for( int i = 0; i < n; i++) {
+    //     int j;
+    //     for ( j = 0; j < i; j++ ) {
+    //         if ( arr[i] == arr[j] )
+    //            cout << arr[i] << " ";
+    //     }
+    // }
+    
+    // Another Approach
+
+    int ans = 0;
+
+    for ( int i = 0; i < n; i++ ) {
+        ans = ans ^ arr[i];
     }
+
+    for ( int i = 1; i < n; i++ ) {
+        ans = ans ^ i;
+    }
+
+    cout << ans;
 }
 
 int main() {
