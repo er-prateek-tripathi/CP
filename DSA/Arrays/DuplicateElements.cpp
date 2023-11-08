@@ -1,4 +1,5 @@
 // Program to find and print duplicate elements in an array.
+// Problem Link: https://www.codingninjas.com/studio/problems/duplicate-in-array_893397?source=youtube&campaign=love_babbar_codestudio1&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio1&leftPanelTabValue=PROBLEM
 
 #include<bits/stdc++.h>
 using namespace std;
